@@ -1,0 +1,620 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1498050108023-c524f18af66e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE5fHx3b3JraW5nfGVufDB8fHx8MTYzNTA0MTg0Ng&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed; 
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: rgba(0, 123, 255, 0.8);
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 4px solid #0056b3;
+}
+
+.vertical-nav {
+    width: 220px;
+    position: fixed;
+    top: 90px; /* Adjusted for header height */
+    left: 0;
+    background: rgba(52, 58, 64, 0.9); /* Semi-transparent dark background */
+    height: calc(100% - 90px);
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.vertical-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-nav ul li {
+    margin: 20px 0;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link.home {
+    background: #ff4757;
+}
+
+.nav-link.projects {
+    background: #ffa502;
+}
+
+.nav-link.skills {
+    background: #2ed573;
+}
+
+.nav-link.contact {
+    background: #1e90ff;
+}
+
+main {
+    margin-left: 240px; /* Leave space for nav bar */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Font for the body */
+    margin: 0; /* Remove default margin */
+}
+
+/* Colorful and padded section */
+body {
+    font-family: Arial, sans-serif; /* Font for the body */
+    margin: 0; /* Remove default margin */
+    background-color: #e0f7fa; /* Light aqua background */
+}
+
+/* Colorful and padded section with a vibrant gradient */
+.projects-section {
+    padding: 40px; /* Padding around the section */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    margin: 20px; /* Margin for spacing */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6f61, #ff3d00, #42a5f5, #66bb6a); /* Mixture of vibrant colors */
+}
+
+/* Centered and stylized heading */
+.projects-section h2 {
+    text-align: center; /* Center title */
+    color: #ffffff; /* White color for contrast */
+    font-size: 3em; /* Increased font size for the heading */
+    margin-bottom: 30px; /* Spacing below heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    animation: bounce 0.5s infinite alternate; /* Bounce animation */
+}
+
+/* Animations for the heading to make it lively */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* General styles for each project */
+.project {
+    border-radius: 20px; /* Rounded corners for projects */
+    margin: 20px 0; /* Space between projects */
+    padding: 20px; /* Padding inside project boxes */
+    color: #fff; /* Default text color */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+    position: relative; /* For pseudo elements */
+    overflow: hidden; /* Handle overflow */
+}
+
+/* Project-specific background styles */
+.project-one {
+    background: linear-gradient(135deg, #ff6f61, #ff3d00); /* Coral gradient */
+}
+
+.project-two {
+    background: linear-gradient(135deg, #42a5f5, #005c99); /* Azure gradient */
+}
+
+.project-three {
+    background: linear-gradient(135deg, #66bb6a, #2e7d32); /* Green gradient */
+}
+
+.project-title {
+    font-size: 1.8em; /* Title font size */
+    margin-bottom: 10px; /* Space below title */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.project-description {
+    font-size: 1.2em; /* Description font size */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Hover scale */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(255, 255, 255, 0.3); /* Light overlay */
+    border-radius: 20px; /* Match corners */
+    z-index: 0; /* Keep behind content */
+}
+#skills {
+    padding: 40px; /* Padding around the section */
+    background: linear-gradient(135deg, #ffce00, #ff6f61, #6a1b9a); /* Colorful gradient background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    margin: 20px; /* Margin for spacing */
+}
+
+#skills h2 {
+    text-align: center; /* Center title */
+    color: white; /* Title color */
+    font-size: 2.5em; /* Increased font size for the heading */
+    margin-bottom: 30px; /* Spacing below heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+}
+
+/* Styling for the skill list */
+.skill-list {
+    list-style: none; /* No default list styles */
+    padding: 0; /* Remove padding */
+    color: white; /* Text color */
+    font-size: 1.2em; /* Font size for the list */
+}
+
+/* Skill list items */
+.skill-list li {
+    margin: 10px 0; /* Space between skill items */
+}
+
+/* Highlight class for specific terms */
+.highlight {
+    font-weight: bold; /* Make highlighted text bold */
+    color: #fff; /* Color for highlighted terms */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+    padding: 4px 8px; /* Padding for a nicer look */
+    border-radius: 4px; /* Rounded corners for highlight */
+}
+.highlight {
+    color: #ff6347;
+}
+
+
+    .vertical-nav {
+        position: fixed; /* Keep the nav fixed */
+        top: 50px; /* Position from the top */
+        left: 20px; /* Position from the left */
+        width: 200px; /* Width of the nav */
+        background-color: #4a148c; /* Dark purple background */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        padding: 20px; /* Spacing inside the nav */
+    }
+    
+    .vertical-nav ul {
+        list-style: none; /* Remove default list style */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+    
+    .vertical-nav li {
+        margin-bottom: 15px; /* Space between each link */
+    }
+    
+    .nav-link {
+        text-decoration: none; /* Remove underline from links */
+        color: #ffffff; /* White text color */
+        font-weight: bold; /* Bold font */
+        display: block; /* Make the entire area click-able */
+        padding: 8px; /* Padding around the text */
+        border-radius: 5px; /* Rounded corners on links */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    }
+    
+    .nav-link:hover {
+        background-color: #fbc02d; /* Yellow background on hover */
+        color: #4a148c; /* Text color changes to dark purple */
+    }
+.about-section {
+    background-color: #e3f2fd; /* Light blue background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the section */
+    margin: 20px 0; /* Spacing around the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about-title {
+    font-family: 'Arial', sans-serif; /* Font for the heading */
+    color: #1976d2; /* Dark blue color for the title */
+    margin-bottom: 15px; /* Spacing below the heading */
+}
+
+.about-text {
+    font-family: 'Georgia', serif; /* Font for body text */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Better readability */
+}
+
+
+.name, .college, .age, .gender, .native, .dob {
+    color: #e53935; /* Bright red color for important texts */
+    font-weight: bold; /* Bold text for important information */
+}
+
+.name:hover, .college:hover, .age:hover, .gender:hover, .native:hover, .dob:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+body {
+    margin: 0;  /* Remove default margin */
+}
+
+/* Styling for the fixed vertical navigation */
+.vertical-nav {
+    position: fixed; /* Keep the nav fixed */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    width: 220px; /* Width of the nav */
+    background: linear-gradient(135deg, #42a5f5, #dce775); /* Colorful gradient background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the nav */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.vertical-nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.vertical-nav li {
+    margin-bottom: 15px; /* Space between each link */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* White text color */
+    font-weight: bold; /* Bold font */
+    display: block; /* Make the entire area clickable */
+    padding: 10px 15px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners on links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-size: 18px; /* Increase font size for visibility */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    color: #42a5f5; /* Change text color to blue on hover */
+}
+/* General styles for each project */
+.project {
+    border-radius: 20px; /* Rounded corners for projects */
+    margin: 20px 0; /* Space between projects */
+    padding: 20px; /* Padding inside project boxes */
+    color: #fff; /* Default text color */
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s; /* Smooth transition on hover */
+    position: relative; /* For pseudo elements */
+    overflow: hidden; /* Handle overflow */
+}
+
+/* Project hover background colors */
+.project:hover {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6f61, #ff3d00, #42a5f5, #66bb6a); /* Vibrant color mixture on hover */
+    transform: scale(1.05); /* Hover scale */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+h2 {
+    text-align: center; /* Center title */
+    color: #333; /* Color for headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+/* Styles for skills table */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+    padding: 10px; /* Padding inside table cells */
+    border: 1px solid #ddd; /* Light grey border */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f4f4f4; /* Light grey background for header */
+    color: #333; /* Darker text color for headers */
+}
+
+/* Highlighted text */
+.highlight {
+    font-weight: bold; /* Make highlighted text bold */
+    color: #ff5722; /* Use a vibrant color for highlights */
+}
+h2 {
+    text-align: center; /* Center title */
+    color: #333; /* Color for headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+/* Styles for skills table */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+* Highlighted text */
+.highlight {
+    font-weight: bold; /* Make highlighted text bold */
+    color: #d84315; /* Dark orange for highlights */
+}
+
+/* Responsive table adjustments */
+@media (max-width: 600px) {
+    table {
+        display: block; /* Make table responsive */
+        overflow-x: auto; /* Horizontal scroll for small screens */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    th, td {
+        display: block; /* Make each cell block for small screens */
+        width: 100%; /* Full width for cells */
+    }
+}
+body {
+    font-family: Arial, sans-serif; /* Font for the body */
+    margin: 0; /* Remove default margin */
+    background-color: #e0f7fa; /* Light aqua background */
+}
+
+.container {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Padding around the content */
+}
+
+h2 {
+    text-align: center; /* Center title */
+    color: #333; /* Color for headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+/* Styles for skills table */
+/* Skills Section Styles */
+/* Skills Section Styles */
+.skills-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 20px 0; /* Margin around the table */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Handle overflow */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6f61, #ff3d00, #42a5f5, #66bb6a); /* Colorful gradient background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.skills-table th, .skills-table td {
+    padding: 15px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light border for rows */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    color: #fff; /* White text color for better contrast */
+}
+
+.skills-table th {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for header */
+    color: #fff; /* White text color for header */
+}
+
+/* Default row color */
+.skills-table tr {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for rows */
+}
+
+/* Hover effect for rows */
+.skills-table tr:hover {
+    background-color: rgba(0, 123, 255, 0.5); /* Change to a blue color on hover */
+}
+
+.highlight {
+    font-weight: bold; /* Bold text for highlights */
+    color: #FFD700; /* Highlight color (gold) */
+}
+.about-section {
+    padding: 40px; /* Padding around the section */
+    border-radius: 12px; /* Rounded corners */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Colorful gradient background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+}
+
+.about-title {
+    font-size: 2.5em; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.about-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.about-photo {
+    width: 150px; /* Set width for the photo */
+    height: 150px; /* Set height for the photo */
+    border-radius: 50%; /* Make the photo circular */
+    margin-right: 20px; /* Space between photo and text */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Shadow for the photo */
+}
+
+.about-text {
+    font-size: 1.2em; /* Font size for the text */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.highlight {
+    color: #FFD700; /* Highlight color (gold) */
+}
+.about-section {
+    padding: 40px; /* Padding around the section */
+    border-radius: 12px; /* Rounded corners */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Colorful gradient background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    transition: background 0.3s; /* Smooth transition for background color */
+}
+
+.about-section:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Change gradient on hover */
+}
+
+.about-title {
+    font-size: 2.5em; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.about-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.about-photo {
+    width: 150px; /* Set width for the photo */
+    height: 150px; /* Set height for the photo */
+    border-radius: 50%; /* Make the photo circular */
+    margin-right: 20px; /* Space between photo and text */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Shadow for the photo */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+.about-photo:hover {
+    transform: scale(1.1); /* Scale up the photo on hover */
+}
+
+.about-text {
+    font-size: 1.2em; /* Font size for the text */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.highlight {
+    color: #FFD700; /* Highlight color (gold) */
+}
+.contact-section {
+    padding: 40px; /* Padding around the section */
+    border-radius: 12px; /* Rounded corners */
+    background: linear-gradient(135deg, #42a5f5, #66bb6a); /* Colorful gradient background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    transition: background 0.3s; /* Smooth transition for background color */
+}
+
+.contact-section:hover {
+    background: linear-gradient(135deg, #66bb6a, #42a5f5); /* Change gradient on hover */
+}
+
+.contact-section h2 {
+    font-size: 2.5em; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.contact-section p {
+    font-size: 1.2em; /* Font size for paragraphs */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.contact-section a {
+    color: #FFD700; /* Highlight color for links (gold) */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth transition for link color */
+}
+
+.contact-section a:hover {
+    color: #fff; /* Change link color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+.footer-section {
+    padding: 20px; /* Padding around the footer */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Colorful gradient background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    position: relative; /* Positioning for hover effect */
+    transition: background 0.3s; /* Smooth transition for background color */
+}
+
+.footer-section:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Change gradient on hover */
+}
+
+.footer-section p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Font size for the text */
+}
+.header-section {
+    padding: 40px; /* Padding around the header */
+    background: linear-gradient(135deg, #42a5f5, #66bb6a); /* Colorful gradient background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    transition: background 0.3s; /* Smooth transition for background color */
+}
+
+.header-section:hover {
+    background: linear-gradient(135deg, #66bb6a, #42a5f5); /* Change gradient on hover */
+}
+
+.header-section h1 {
+    font-size: 2.5em; /* Title font size */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.header-section p {
+    font-size: 1.2em; /* Font size for the paragraph */
+    margin: 0; /* Remove default margin */
+}
